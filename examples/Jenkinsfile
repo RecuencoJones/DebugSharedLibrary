@@ -1,0 +1,9 @@
+@Library('DebugSharedLibrary') _
+
+println pipelines // Instance of vars/pipelines.groovy
+println my.pipelines // Should be instance of src/com/debug/shared/library/MyPipelines.groovy – but it is not!
+
+println pipelines.version
+println pipelines.configuration
+
+my.pipelines.setDefaultProperties()
